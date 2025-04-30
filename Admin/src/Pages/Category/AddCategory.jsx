@@ -22,7 +22,7 @@ const AddCategory = () => {
         formData.append('categoryStatus', categoryStatus); // `true` or `false`
 
         try {
-            const response = await axios.post('http://localhost:8000/api/add-category', formData, {
+            const response = await axios.post('https://goyat-dryfruits.onrender.com/api/add-category', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

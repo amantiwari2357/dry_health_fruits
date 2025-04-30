@@ -18,7 +18,7 @@ const EditVouchers = () => {
     useEffect(() => {
         const fetchVoucher = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/single-vouchers/${id}`);
+                const response = await axios.get(`https://goyat-dryfruits.onrender.com/api/single-vouchers/${id}`);
                 setVoucherData(response.data.data);
             } catch (error) {
                 console.error('Error fetching voucher:', error);
@@ -57,7 +57,7 @@ const EditVouchers = () => {
         }
         setIsLoading(true);
         try {
-            await axios.put(`http://localhost:8000/api/update-vouchers/${id}`, voucherData);
+            await axios.put(`https://goyat-dryfruits.onrender.com/api/update-vouchers/${id}`, voucherData);
             toast.success('Voucher updated successfully!');
             navigate('/all-vouchers');
         } catch (error) {
