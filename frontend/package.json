@@ -17,7 +17,6 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-image-magnify": "^2.7.4",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
@@ -49,11 +48,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "overrides": {
-      "react-image-magnify": {
-        "react": "^18.3.1"
-      }
-    }
+    ]
   }
 }
