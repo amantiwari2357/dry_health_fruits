@@ -26,7 +26,7 @@ const Hero = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/get-product");
+      const response = await axios.get("https://goyat-dryfruits.onrender.com/api/get-product");
       setProducts(response.data.products);
     } catch (error) {
       console.error("Error fetching products:", error);

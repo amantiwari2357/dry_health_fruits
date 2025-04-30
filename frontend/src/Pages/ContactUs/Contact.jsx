@@ -25,7 +25,7 @@ const Contact = () => {
   const postData = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:8000/api/send-enquery", data)
+      const res = await axios.post("https://goyat-dryfruits.onrender.com/api/send-enquery", data)
       if (res.status === 200) {
         Swal.fire({
           title: 'Success!',

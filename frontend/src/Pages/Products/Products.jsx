@@ -16,7 +16,7 @@ const Products = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/all-category"
+          "https://goyat-dryfruits.onrender.com/api/all-category"
         );
         const fetchedCategories = response?.data;
         setCategories(fetchedCategories);
@@ -37,7 +37,7 @@ const Products = () => {
   const fetchProducts = async (categoryId) => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/get-product"
+        "https://goyat-dryfruits.onrender.com/api/get-product"
       );
       const filteredProducts = response.data.products.filter(
         (product) => product.categoryName._id === categoryId
