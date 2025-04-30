@@ -26,7 +26,7 @@ const AllOrder = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/order-data');
+            const response = await axios.get('https://goyat-dryfruits.onrender.com/api/order-data');
             if (response.status === 200) {
                 const cleanedOrders = normalizeOrders(response.data.data);
                 setOrders(cleanedOrders);
@@ -57,7 +57,7 @@ const AllOrder = () => {
             });
 
             if (result.isConfirmed) {
-                const response = await axios.delete(`http://localhost:8000/api/delete-order-data/${orderId}`);
+                const response = await axios.delete(`https://goyat-dryfruits.onrender.com/api/delete-order-data/${orderId}`);
                 if (response.status === 200) {
                     toast.success('Order deleted successfully!');
                     fetchOrders();
