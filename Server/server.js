@@ -32,7 +32,7 @@ const allowedOrigins = [
     'https://www.panchgavyamrit.com',
     'https://admin.panchgavyamrit.com',
     'https://api.panchgavyamrit.com',
-
+"https://goyattrading.netlify.app",
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:3002',  

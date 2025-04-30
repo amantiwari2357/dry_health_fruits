@@ -32,7 +32,7 @@ const Register = () => {
     try {
       if (data.password === cPass) {
         const res = await axios.post(
-          "http://localhost:8000/api/signup",
+          "https://goyat-dryfruits.onrender.com/api/signup",
           data
         );
         if (res.status === 201) {

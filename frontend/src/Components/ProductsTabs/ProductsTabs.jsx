@@ -51,7 +51,7 @@ const ProductsTabs = () => {
   
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/all-category").then((response) => {
+    axios.get("https://goyat-dryfruits.onrender.com/api/all-category").then((response) => {
       setCategories(response.data);
       if (response.data.length > 0) setActiveTab(response.data[0]._id);
     });
@@ -60,7 +60,7 @@ const ProductsTabs = () => {
   useEffect(() => {
     if (activeTab) {
       axios
-        .get("http://localhost:8000/api/get-product")
+        .get("https://goyat-dryfruits.onrender.com/api/get-product")
         .then((response) => {
           const filteredProducts = response.data.products.filter(
             (product) => product.categoryName._id === activeTab
