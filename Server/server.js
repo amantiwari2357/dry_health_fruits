@@ -27,17 +27,16 @@ const shiprocket = require("./Routes/ShipRocketRoutes");
 const app = express();
 
 // Allowed origins (your frontend domains)
-const allowedOrigins = [
-    'https://panchgavyamrit.com',
-    'https://www.panchgavyamrit.com',
-    'https://admin.panchgavyamrit.com',
-    'https://api.panchgavyamrit.com',
-    'https://goyattrading.netlify.app',
-    'http://localhost:3000',
-    'http://localhost:3001',
-    'http://localhost:3002',  
-];
+const allowedOrigins = [];
 
+// 'https://panchgavyamrit.com',
+//     'https://www.panchgavyamrit.com',
+//     'https://admin.panchgavyamrit.com',
+//     'https://api.panchgavyamrit.com',
+//     'https://goyattrading.netlify.app',
+//     'http://localhost:3000',
+//     'http://localhost:3001',
+//     'http://localhost:3002', 
 // CORS configuration
 const corsOptions = {
     origin: (origin, callback) => {
