@@ -69,3 +69,5 @@ env/
 # React Native
 .expo/
 .expo-shared/
+
+.vercel

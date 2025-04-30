@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./productdetails.css";
-import ReactImageMagnify from "react-image-magnify";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
@@ -8,7 +7,7 @@ import { Helmet } from "react-helmet";
 import axios from "axios"; // Import axios
 import Swal from "sweetalert2";
 
-const ProductDetails = ({refs, setRef}) => {
+const ProductDetails = ({ refs, setRef }) => {
   const navigate = useNavigate();
   const { id } = useParams();
   const location = useLocation();
@@ -26,8 +25,6 @@ const ProductDetails = ({refs, setRef}) => {
   const [price, setPrice] = useState(initialPrice);
   const [availability, setAvailability] = useState(stock === "Available");
   const [weightData, setWeightData] = useState(null); // To store weight specific data
-
-
 
   const increaseQuantity = () => setQuantity((prev) => prev + 1);
   const decreaseQuantity = () =>
@@ -73,7 +70,6 @@ const ProductDetails = ({refs, setRef}) => {
     }
   };
 
-
   const addToCart = () => {
     if (!productDetails) return;
     if (quantity < 1) {
@@ -113,7 +109,6 @@ const ProductDetails = ({refs, setRef}) => {
       navigate("/cart");
     }
   };
-
 
   if (!productDetails) {
     return <div>Loading...</div>;
@@ -169,22 +164,18 @@ const ProductDetails = ({refs, setRef}) => {
                 <i className="bi bi-star"></i>
               </div>
               <div className="product-details-content">
-                {/* <h5>
-                  <Link to="#">{productDetails.productName}</Link>
-                </h5> */}
                 <h1>{productDetails.productName}</h1>
                 <p>
                   <b>Product Details:</b>
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: productDetails.productDetails }} />
                 <ul>
-                  <li >
+                  <li>
                     <b>Category:</b><span style={{ textTransform: "capitalize" }}> {productDetails.categoryName.categoryName}</span>
                   </li>
                   <li>
                     <b>Availability:</b> {weightData && weightData.stock === "Available" ? "In Stock" : "Out of Stock"}
                   </li>
-
                   <li>
                     <b>Weight:</b>
                     <select value={selectedWeight} onChange={handleWeightChange}>
@@ -208,8 +199,8 @@ const ProductDetails = ({refs, setRef}) => {
                     <span className="fs-2">₹{price}</span>
                     &nbsp;
                   </li>
-                  <li >
-                    {availability ? (<div >
+                  <li>
+                    {availability ? (<div>
                       <button
                         onClick={addToCart}
                         className="btn text-white d-flex justify-content-center align-items-center"
@@ -223,29 +214,12 @@ const ProductDetails = ({refs, setRef}) => {
                       </p>
                     )}
                   </li>
-
-
                 </ul>
               </div>
             </div>
 
             <div className="col-md-6 order-1 order-md-2">
               <div className="slider-container">
-                <ReactImageMagnify
-                  {...{
-                    smallImage: {
-                      alt: "Product Image",
-                      isFluidWidth: true,
-                      src: currentImage,
-                    },
-                    largeImage: {
-                      src: currentImage,
-                      width: 1200,
-                      height: 1800,
-                    },
-                    enlargedImagePosition: "over", // Ensures zoom appears over the image
-                  }}
-                />
                 <div className="thumbnail-container">
                   {productDetails.productImage.map((img, index) => (
                     <div
