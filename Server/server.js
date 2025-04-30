@@ -51,7 +51,7 @@ const corsOptions = {
 };
 
 // Apply CORS options to the app
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(cookieParser());
 
