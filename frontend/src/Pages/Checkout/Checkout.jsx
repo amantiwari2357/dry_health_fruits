@@ -208,7 +208,7 @@ const Checkout = () => {
                 key: "rzp_live_FjN3xa6p5RsEl6",
                 amount: razorpayOrder.amount,
                 currency: "INR",
-                name: "Vedlakshna",
+                name: "Goyat Trading.Co",
                 description: "Checkout Payment",
                 order_id: razorpayOrder.id,
                 handler: async (response) => {

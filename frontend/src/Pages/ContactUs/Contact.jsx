@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Panchgavyamrit</title>
+        <title>Contact Us | Goyat Wala</title>
         <meta
           name="description"
           content="Get in touch with us through phone, email, or by filling out the contact form on our website. We are here to assist you with any inquiries."
@@ -132,7 +132,7 @@ const Contact = () => {
                       </h5>
                     </div>
                     <a href="tel:+91 9953843002" className="contact-link">
-                      +91 9953843002
+                      +91 8283863884
                     </a>
                   </div>
                 </div>
@@ -151,7 +151,9 @@ const Contact = () => {
                       </h5>
                     </div>
                     <address className="contact-address">
-                    Shop.141 Sec 24, Pocket 11  Rohini  Delhi.
+                    GROUND FLOOR, SCO NO. 20, Goyat trading co., VASANT
+                    VIHAR PHASE NO. 1, HIMMATGARH DHAKOLI,
+                    ZIRAKPUR, SAS NAGAR MOHALI, SAS Nagar, Punjab,
                     </address>
                   </div>
                 </div>
@@ -170,10 +172,10 @@ const Contact = () => {
                       </h5>
                     </div>
                     <a
-                      href="mailto:gouravpanhal80107@gmail.com"
+                      href="mailto:dryfruit2664@gmail.com"
                       className="contact-link"
                     >
-                      goelmewewale@gmail.com
+                      dryfruit2664@gmail.com
                     </a>
                   </div>
                 </div>

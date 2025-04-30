@@ -3,16 +3,16 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import logo from "../../images/Logo.png";
 const Footer = () => {
-  const socialLinks = [
-    { platform: "YouTube", icon: "bi-youtube", color: "#FF0000" },
-    { platform: "WhatsApp", icon: "bi-whatsapp", color: "#25D366" },
-    {
-      platform: "Instagram",
-      icon: "bi-instagram",
-      color: "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
-    },
-    { platform: "Twitter", icon: "bi-twitter", color: "#1DA1F2" },
-  ];
+  // const socialLinks = [
+  //   { platform: "YouTube", icon: "bi-youtube", color: "#FF0000" },
+  //   { platform: "WhatsApp", icon: "bi-whatsapp", color: "#25D366" },
+  //   {
+  //     platform: "Instagram",
+  //     icon: "bi-instagram",
+  //     color: "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
+  //   },
+  //   { platform: "Twitter", icon: "bi-twitter", color: "#1DA1F2" },
+  // ];
 
   return (
     <section className="footer-container">
@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <div className="footer-section">
-            <h4>Follow Us</h4>
+            {/* <h4>Follow Us</h4>
             <div className="social-icons">
               {socialLinks.map(({ platform, icon, color }, index) => (
                 <Link
@@ -83,22 +83,16 @@ const Footer = () => {
                   <i className={`bi ${icon}`}></i>
                 </Link>
               ))}
-            </div>
+            // </div> */}
           </div>
         </div>
 
         {/* Footer Bottom Section */}
         <div className="footer-bottom">
           <p>
-            &copy; 2025 Shri Surabhi Vedlakshna Panchgavyamrit Kendra. All Rights Reserved. | Designed & Powered by{" "}
-            <a
-              href="https://digiindiasolutions.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#F58634", textDecoration: "none" }}
-            >
-              Digi India Solutions
-            </a>
+            &copy; 2025. All Rights Reserved. 
+            {
+           }
           </p>
         </div>
       </footer>

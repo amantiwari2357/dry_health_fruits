@@ -14,11 +14,11 @@ const Faq = () => {
         <title>FAQ - Panchgavyamrit</title>
         <meta
           name="description"
-          content="Frequently Asked Questions about Panchgavyamrit and Shri Godham Mahatirth Pathmeda."
+          content="Frequently Asked Questions about Goyat Trading.Co "
         />
         <meta
           name="keywords"
-          content="FAQ, Panchgavyamrit, Gomata, Shri Godham Mahatirth Pathmeda, Goseva, Vedalakshana Gomata"
+          content="FAQ, Goyat Trading.Co ,"
         />
       </Helmet>
       <section className="breadcrumb">
@@ -74,7 +74,7 @@ const Faq = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    1. What products do you offer at Goel Mewe Wala?
+                    1. What products do you offer at Goyat Trading.Co?
 
                   </button>
                 </h2>

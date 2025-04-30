@@ -10,17 +10,17 @@ const getWelcomeEmailTemplate = (name) => `
         <table style="max-width: 600px; margin: 50px auto; background: #FFFFFF; border: 1px solid #E8E8E8; border-radius: 10px;">
             <tr>
                 <td style="background: #F58634; padding: 20px; text-align: center;">
-                    <h1 style="color: #FFFFFF; font-size: 24px;">Welcome to Vedhlakshna</h1>
+                    <h1 style="color: #FFFFFF; font-size: 24px;">Welcome to Goyat Trading</h1>
                 </td>
             </tr>
             <tr>
                 <td style="padding: 20px;">
                     <h2 style="color: #333333; font-size: 20px; margin-bottom: 10px;">Hello ${name},</h2>
                     <p style="color: #555555; font-size: 16px; line-height: 1.5; margin: 0;">
-                        Thank you for signing up with <strong>Vedhlakshna</strong>. We are excited to have you on board!
+                        Thank you for signing up with <strong>Goyat Trading</strong>. We are excited to have you on board!
                     </p>
                     <p style="color: #555555; font-size: 16px; line-height: 1.5; margin: 0; margin-top: 10px;">
-                        Vedhlakshna specializes in selling high-quality products like Cow Ghee, Chawanprash, and more. We are committed to providing you with the best products and service.
+                        Goyat Trading specializes in selling high-quality products like Cow Ghee, Chawanprash, and more. We are committed to providing you with the best products and service.
                     </p>
                 </td>
             </tr>
@@ -31,7 +31,8 @@ const getWelcomeEmailTemplate = (name) => `
                     </p>
                     <p style="color: #555555; font-size: 14px; line-height: 1.5; margin: 0; margin-top: 10px;">
                         Best regards,<br>
-                        <strong>The Vedhlakshna Team</strong>
+                        <strong>The Goyat Trading Team
+</strong>
                     </p>
                 </td>
             </tr>
@@ -52,9 +53,9 @@ const createRecord = async (req, res) => {
 
         // Send welcome email
         await transporter.sendMail({
-            from: "Panchgavya.amrit@gmail.com",
+            from: "dryfruit2664@gmail.com",
             to: email,
-            subject: "Welcome to Vedhlakshna!",
+            subject: "Welcome to Goyat Trading!",
             html: getWelcomeEmailTemplate(name)
         });
 
@@ -193,7 +194,7 @@ const getPasswordResetEmailTemplate = (name, resetLink) => `
     <div style="font-family: Arial, sans-serif; margin: 0; padding: 0; width: 100%; background-color: #F7F7F7;">
         <table style="max-width: 600px; margin: 50px auto; background: #FFFFFF; border: 1px solid #E8E8E8; border-radius: 10px;">
             <tr>
-                <td style="background: #F58634; padding: 20px; text-align: center;">
+                <td style="background:rgb(52, 158, 245); padding: 20px; text-align: center;">
                     <h1 style="color: #FFFFFF; font-size: 24px;">Password Reset Request</h1>
                 </td>
             </tr>
@@ -204,7 +205,7 @@ const getPasswordResetEmailTemplate = (name, resetLink) => `
                         We received a request to reset your password. If you requested this change, click the link below to reset your password:
                     </p>
                     <p style="color: #555555; font-size: 16px; line-height: 1.5; margin: 20px 0;">
-                        <a href="${resetLink}" style="color: #F58634; text-decoration: none; font-size: 16px;">Reset Password</a>
+                        <a href="${resetLink}" style="color:rgb(113, 172, 255); text-decoration: none; font-size: 16px;">Reset Password</a>
                     </p>
                     <p style="color: #555555; font-size: 14px; line-height: 1.5; margin: 0;">
                         If you did not request this, please ignore this email.
@@ -215,7 +216,8 @@ const getPasswordResetEmailTemplate = (name, resetLink) => `
                 <td style="padding: 20px;">
                     <p style="color: #555555; font-size: 14px; line-height: 1.5; margin: 0;">
                         Best regards,<br>
-                        <strong>The Vedhlakshna Team</strong>
+                        <strong>The Goyat Trading Team
+</strong>
                     </p>
                 </td>
             </tr>
@@ -245,11 +247,11 @@ const forgotPassword = async (req, res) => {
         await user.save();
 
         // Generate the reset link
-        const resetLink = `https://panchgavyamrit.com/reset-password/${resetToken}`;
+        const resetLink = `http://localhost:8000/reset-password/${resetToken}`;
 
         // Send password reset email
         await transporter.sendMail({
-            from: "Panchgavya.amrit@gmail.com",
+            from: "dryfruit2664@gmail.com",
             to: email,
             subject: "Password Reset Request",
             html: getPasswordResetEmailTemplate(user.name, resetLink),

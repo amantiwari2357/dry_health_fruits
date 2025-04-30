@@ -245,6 +245,7 @@ const AddProduct = () => {
                                     <label className="form-label">Tax %</label>
                                     <select name="tax" id="" onChange={(e) => handlePointChange(index, e)} className='form-select'>
                                         <option value="">Tax</option>
+                                        <option value="3%">0%</option>
                                         <option value="3%">3%</option>
                                         <option value="5%">5%</option>
                                         <option value="12%">12%</option>

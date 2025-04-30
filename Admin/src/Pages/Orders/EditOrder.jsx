@@ -75,7 +75,7 @@ const InvoicePDF = ({ order }) => {
     return (
         <Document>
             <Page size="A4" style={styles.page}>
-                <Text style={styles.header}>Shri Surabhi Vedlakshna Panchgavyamrit Kendra</Text>
+                <Text style={styles.header}>Goyat Trading.Co</Text>
                 <Text style={styles.shipping}>Shipping Details</Text>
                 <Text style={styles.section}>Order ID: {order._id}</Text>
                 <Text style={styles.section}>orderUniqueId :{order.orderUniqueId}</Text>

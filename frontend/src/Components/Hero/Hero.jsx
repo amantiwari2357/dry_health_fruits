@@ -176,20 +176,20 @@ const Hero = () => {
     return text;
   }
 
-  const [articleArr, setArticleArr] = useState([]);
+  // const [articleArr, setArticleArr] = useState([]);
 
-  const getArticalsData = async () => {
-    try {
-      const res = await axios.get("http://localhost:8000/api/all-articals")
-      setArticleArr(res.data); // Assuming the API returns an array of articles
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  // const getArticalsData = async () => {
+  //   try {
+  //     const res = await axios.get("http://localhost:8000/api/all-articals")
+  //     setArticleArr(res.data); // Assuming the API returns an array of articles
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
 
-  useEffect(() => {
-    getArticalsData()
-  }, [])
+  // useEffect(() => {
+  //   getArticalsData()
+  // }, [])
 
 
   // add by aman tiwari
@@ -597,15 +597,15 @@ const Hero = () => {
 
       <ProductsTabs />
 
-      <section className="article">
-        <div className="container">
-          <div className="headings">
-            <h2>Articles</h2>
-            <div className="Article-carousel">
-              <div className="slider-container">
-                <Slider {...settings2}>
-                  {articleArr.map((item, index) => (
-                    <div>
+      {/* <section className="article"> */}
+        {/* <div className="container"> */}
+          {/* <div className="headings"> */}
+            {/* <h2>Articles</h2> */}
+            {/* <div className="Article-carousel"> */}
+              {/* <div className="slider-container"> */}
+                {/* <Slider {...settings2}> */}
+                  {/* {articleArr.map((item, index) => ( */}
+                    {/* <div>
                       <div className="article_card">
                         <img src={item.image} alt="" />
                         <h5>
@@ -616,22 +616,22 @@ const Hero = () => {
                           {item.descrition.length > 200
                             ? `${item.descrition.slice(0, 200)}...`
                             : item.descrition}
-                        </p>
+                        </p> */}
                         {/* <p className="date">{item.date}</p> */}
                         {/* <div className="d-flex justify-start">
                           <Link className="button_" to="">
                             Read More
                           </Link>
                         </div> */}
-                      </div>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                      {/* </div> */}
+                    {/* </div> */}
+                  {/* ))} */}
+                {/* </Slider> */}
+              {/* </div> */}
+            {/* </div> */}
+          {/* </div> */}
+        {/* </div> */}
+      {/* </section> */}
 
       <SubscribeForm />
     </>

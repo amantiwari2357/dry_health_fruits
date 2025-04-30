@@ -7,12 +7,12 @@ const About = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-    })
+    });
   }, []);
   return (
     <>
       <Helmet>
-        <title>About Us - Shri Godham Mahatirtha Pathmeda</title>
+        <title>About Us - Goyat Trading. Co</title>
         <meta
           name="description"
           content="Learn about Shri Godham Mahatirtha Pathmeda, a revolutionary initiative for Gomata protection, Ayurveda medicine, and cultural preservation in India."
@@ -56,23 +56,19 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>About Us – GoEalWewala</h2>
+              <h2>About Us – Goyat Trading.Co</h2>
             </div>
             <p>
-            At Goel Mewe Wala, we bring you the finest selection 
-            of dry fruits, nuts, and spices, sourced with utmost 
-            care and dedication to purity, quality, and health. Our
-             journey is rooted in a passion for delivering nature’s
-              best products to every household, ensuring a perfect balance
-               between traditional values and modern excellence.
-
+              At Goyat Trading Co., we specialize in the import and distribution
+              of high-quality products ranging from industrial materials to
+              consumer goods. Our commitment to excellence, reliability, and
+              customer satisfaction drives everything we do. With an unwavering
+              focus on quality and service, we ensure that our products meet the
+              highest standards to fulfill the diverse needs of our clients
+              worldwide.
             </p>
-            <p>
-              {/* write more */}
-            </p>
-            <p>
-             {/* write more */}
-            </p>
+            <p>{/* write more */}</p>
+            <p>{/* write more */}</p>
           </div>
         </div>
       </section>
@@ -80,23 +76,16 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>Our Journey
-              </h2>
+              <h2>Our Journey</h2>
             </div>
             <p>
-            Goel Mewe Wala was founded in 2013 at 
-            Rohini, Delhi, with a simple yet powerful 
-            vision — to offer premium-quality dry fruits, 
-            nuts, and spices that enrich lives with health 
-            and wellness. What began as a humble initiative 
-            has now grown into a trusted brand known for its
-             commitment to authenticity, freshness, and customer 
-             satisfaction.
-            Inspired by the principles of compassion, 
-            sustainability, and purity, we ensure that 
-           every product we deliver carries the rich goodness
-            of nature and the trust of generations.
-
+              Founded in 2010, Goyat Trading.Co started as a small trading firm
+              with a vision to become a global leader in the supply of premium
+              goods. Over the years, we have expanded our operations to include
+              a vast network of suppliers and partners, enabling us to deliver
+              exceptional products to various industries across the globe. Our
+              dedication to building strong relationships with both our
+              customers and suppliers has been the cornerstone of our success.
             </p>
           </div>
         </div>
@@ -105,43 +94,38 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>What We Stand For
-              </h2>
+              <h2>What We Stand For</h2>
             </div>
             <p>
-            At Goel Mewe Wala, quality is our promise, 
-            and integrity is our principle. Every product we 
-            offer is carefully selected, processed, and packaged 
-            to retain its natural taste, nutrition, and 
-            richness. We are committed to:
-            Providing pure, nutritious, and high-grade dry fruits, 
-            nuts, and spices.Practicing ethical sourcing and promoting
-             sustainable farming practices.Upholding transparency, 
-             honesty, and eco-consciousness in all our operations.Encouraging healthy
-            living and well-being through natural, wholesome foods.Our vision is not just 
-            about business — it is about building healthier lifestyles and supporting the environment with every step we take.
-
+              At Goyat Trading.Co, quality is our promise, and integrity is our
+              principle. Every product we offer is carefully selected,
+              processed, and packaged to retain its natural taste, nutrition,
+              and richness. We are committed to: Providing pure, nutritious, and
+              high-grade dry fruits, nuts, and spices.Practicing ethical
+              sourcing and promoting sustainable farming practices.Upholding
+              transparency, honesty, and eco-consciousness in all our
+              operations.Encouraging healthy living and well-being through
+              natural, wholesome foods.Our vision is not just about business —
+              it is about building healthier lifestyles and supporting the
+              environment with every step we take.
             </p>
           </div>
         </div>
       </section>
 
-
       <section className="about-core-values">
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>Core Values
-
-              </h2>
+              <h2>Core Values</h2>
             </div>
             <p>
-            Purity: Bringing natural products without 
-            artificial additives.Compassion: Respect for
-             nature, farmers, and customers alike.Sustainability:
-              Promoting eco-friendly and ethical practices.Integrity: 
-              Ensuring honesty and transparency in every interaction.Health & 
-              Wellness: Helping people live healthier, more balanced lives.
+              Purity: Bringing natural products without artificial
+              additives.Compassion: Respect for nature, farmers, and customers
+              alike.Sustainability: Promoting eco-friendly and ethical
+              practices.Integrity: Ensuring honesty and transparency in every
+              interaction.Health & Wellness: Helping people live healthier, more
+              balanced lives.
             </p>
           </div>
         </div>
@@ -151,23 +135,18 @@ const About = () => {
         <div className="container">
           <div className="about_content">
             <div className="heading">
-              <h2>Our Mission
-
-              </h2>
+              <h2>Our Mission</h2>
             </div>
             <p>
-            We aim to be India’s most trusted 
-            brand for dry fruits, nuts, and spices 
-            by offering authentic, healthy, and ethically
-            sourced products.At Goel Mewe Wala, we believe 
-            that by staying true to our roots and values, we 
-            can deliver excellence to every home while making a 
-            positive impact on the world around us.            </p>
+              We aim to be India’s most trusted brand for dry fruits, nuts, and
+              spices by offering authentic, healthy, and ethically sourced
+              products.AtGoyat Trading.Co, we believe that by staying true to our
+              roots and values, we can deliver excellence to every home while
+              making a positive impact on the world around us.{" "}
+            </p>
           </div>
         </div>
       </section>
-
-
     </>
   );
 };

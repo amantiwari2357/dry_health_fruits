@@ -91,7 +91,7 @@ const ForgetPassword = () => {
         <title>Forgot Password - Panchgavyamrit</title>
         <meta
           name="description"
-          content="Reset your password by entering the email associated with your Panchgavyamrit account. You will receive an OTP for verification."
+          content="Reset your password by entering the email associated with your Goyat Trading.Coaccount. You will receive an OTP for verification."
         />
       </Helmet>
       <section className="forget-password">

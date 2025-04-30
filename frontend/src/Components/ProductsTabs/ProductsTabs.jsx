@@ -241,7 +241,8 @@ const ProductsTabs = () => {
                 })}
               </Slider>
             ) : (
-              <p>No products found.</p>
+              <p></p>   
+              // product not found
             )}
           </div>
         </div>

@@ -16,7 +16,7 @@ const TermsConditions = () => {
         <title>Terms and Conditions</title>
         <meta
           name="description"
-          content="Read the Terms and Conditions of using Goel Mewe Wala's platform, including policies on products, shipping, returns, and user conduct."
+          content="Read the Terms and Conditions of usingGoyat Trading.Co's platform, including policies on products, shipping, returns, and user conduct."
         />
       </Helmet>
       <section className="breadcrumb">
@@ -56,14 +56,14 @@ const TermsConditions = () => {
               <h4>Introduction</h4>
             </div>
             <p>
-              Welcome to Goel Mewe Wala! By accessing and using our website (the "Site") or purchasing products from us, you agree to be bound by the following terms and conditions ("Terms"). Please read them carefully.
+              Welcome to Goyat Trading.Co! By accessing and using our website (the "Site") or purchasing products from us, you agree to be bound by the following terms and conditions ("Terms"). Please read them carefully.
             </p>
 
             <div>
               <h4>1. General</h4>
             </div>
             <p>
-              This Site is owned and operated by Goel Mewe Wala ("we", "us", "our"). These Terms apply to all users of the Site, including without limitation users who are browsers, customers, and merchants.
+              This Site is owned and operated by Goyat Trading.Co ("we", "us", "our"). These Terms apply to all users of the Site, including without limitation users who are browsers, customers, and merchants.
             </p>
 
             <div>
@@ -84,7 +84,7 @@ const TermsConditions = () => {
               <h4>4. Shipping and Delivery</h4>
             </div>
             <p>
-              We deliver across India via trusted courier partners. Estimated delivery time is 3-7 business days, depending on location. Delivery charges (if any) will be mentioned at checkout. Goel Mewe Wala is not responsible for delays caused by courier companies or unforeseen circumstances.
+              We deliver across India via trusted courier partners. Estimated delivery time is 3-7 business days, depending on location. Delivery charges (if any) will be mentioned at checkout.Goyat Trading.Co is not responsible for delays caused by courier companies or unforeseen circumstances.
             </p>
 
             <div>
@@ -105,14 +105,14 @@ const TermsConditions = () => {
               <h4>7. Intellectual Property</h4>
             </div>
             <p>
-              All content on this Site — including logos, text, images, graphics, and product descriptions — is the property of Goel Mewe Wala and protected under copyright laws. You may not use, reproduce, or distribute our content without written permission.
+              All content on this Site — including logos, text, images, graphics, and product descriptions — is the property ofGoyat Trading.Co and protected under copyright laws. You may not use, reproduce, or distribute our content without written permission.
             </p>
 
             <div>
               <h4>8. Limitation of Liability</h4>
             </div>
             <p>
-              We strive to provide accurate information and high-quality products; however, we do not guarantee that the Site will be error-free or uninterrupted. In no case shall Goel Mewe Wala be liable for any loss or damage arising from your use of our products or services.
+              We strive to provide accurate information and high-quality products; however, we do not guarantee that the Site will be error-free or uninterrupted. In no case shallGoyat Trading.Co be liable for any loss or damage arising from your use of our products or services.
             </p>
 
             <div>

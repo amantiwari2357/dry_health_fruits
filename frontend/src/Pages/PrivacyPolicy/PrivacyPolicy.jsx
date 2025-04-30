@@ -11,10 +11,10 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy & Policy - Goel Mewe Wala</title>
+        <title>Privacy & Policy -Goyat Trading.Co</title>
         <meta
           name="description"
-          content="Learn how Goel Mewe Wala collects, uses, and protects your personal information. Your privacy and trust are important to us."
+          content="Learn howGoyat Trading.Co collects, uses, and protects your personal information. Your privacy and trust are important to us."
         />
       </Helmet>
 

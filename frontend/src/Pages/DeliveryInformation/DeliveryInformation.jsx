@@ -11,12 +11,12 @@ const DeliveryInformation = () => {
   return (
     <>
       <Helmet>
-        <title>Shipping Policy | Goel Mewe Wala</title>
+        <title>Shipping Policy |Goyat Trading.Co</title>
         <meta
           name="description"
-          content="Learn about Goel Mewe Wala's shipping process, delivery areas, estimated delivery times, and shipping charges. We ensure fast and secure delivery of your dry fruits, nuts, and spices."
+          content="Learn about Goyat Trading.Co's shipping process, delivery areas, estimated delivery times, and shipping charges. We ensure fast and secure delivery of your dry fruits, nuts, and spices."
         />
-        <meta name="keywords" content="shipping policy, delivery information, Goel Mewe Wala, shipping charges, order delivery" />
+        <meta name="keywords" content="shipping policy, delivery information,Goyat Trading.Co, shipping charges, order delivery" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yourwebsite.com/delivery-information" />
       </Helmet>
@@ -50,7 +50,7 @@ const DeliveryInformation = () => {
       <section className="delivery-section">
         <div className="container">
           <h1>Shipping Policy</h1>
-          <p>Thank you for shopping at Goel Mewe Wala! We are committed to providing you with the best shopping experience, including fast and reliable shipping of your orders.</p>
+          <p>Thank you for shopping at Goyat Trading.Co! We are committed to providing you with the best shopping experience, including fast and reliable shipping of your orders.</p>
 
           <h2>1. Order Processing Time</h2>
           <ul>
@@ -91,7 +91,7 @@ const DeliveryInformation = () => {
 
           <h2>9. Address Accuracy</h2>
           <p>
-            Please ensure the shipping address provided is correct and complete. Goel Mewe Wala is not responsible for delivery issues arising from incorrect addresses. 
+            Please ensure the shipping address provided is correct and complete.Goyat Trading.Co is not responsible for delivery issues arising from incorrect addresses. 
             If the package is returned, additional shipping fees may apply for re-delivery.
           </p>
 

@@ -17,18 +17,18 @@ exports.createSubscription = async (req, res) => {
 
         // Email content for the admin
         const mailOptions = {
-            from: "Panchgavya.amrit@gmail.com",
-            to: "Panchgavya.amrit@gmail.com",
+            from: "dryfruit2664@gmail.com",
+            to: "dryfruit2664@gmail.com",
             subject: "New Subscription Notification",
             html: `
           <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-            <img src="https://panchgavyamrit.com/static/media/Logo.e4770e51e9e2f1f1d58d.png" alt="VedLakshna Logo" style="width: 150px; margin-bottom: 20px;">
+            <img src="/images/logo.png" alt="Goyat Trading.Co Logo" style="width: 150px; margin-bottom: 20px;">
             <h2>New Subscription Received!</h2>
             <p>Dear Admin,</p>
-            <p>A new user has subscribed to VedLakshna updates using the following email:</p>
+            <p>A new user has subscribed to Goyat Trading.Coupdates using the following email:</p>
             <p><strong>Email:</strong> ${subscribeEmail}</p>
             <p>Regards,</p>
-            <p><strong>VedLakshna Team</strong></p>
+            <p><strong>Goyat Trading.Co Team</strong></p>
           </div>
         `,
         };

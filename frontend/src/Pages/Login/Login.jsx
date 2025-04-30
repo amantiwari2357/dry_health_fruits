@@ -63,7 +63,7 @@ const Login = () => {
         <title>Login - Panchgavyamrit</title>
         <meta
           name="description"
-          content="Login to your Panchgavyamrit account to access your dashboard and track your orders. If you are new, create an account to get started."
+          content="Login to your Goyat Trading.Coaccount to access your dashboard and track your orders. If you are new, create an account to get started."
         />
       </Helmet>
       <section className="login">
