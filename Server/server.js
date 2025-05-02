@@ -26,30 +26,6 @@ const shiprocket = require("./Routes/ShipRocketRoutes");
 
 const app = express();
 
-// Allowed origins (your frontend domains)
-const allowedOrigins = [];
-
-// 'https://panchgavyamrit.com',
-//     'https://www.panchgavyamrit.com',
-//     'https://admin.panchgavyamrit.com',
-//     'https://api.panchgavyamrit.com',
-//     'https://goyattrading.netlify.app',
-//     'http://localhost:3000',
-//     'http://localhost:3001',
-//     'http://localhost:3002', 
-// CORS configuration
-const corsOptions = {
-    origin: (origin, callback) => {
-        // Allow requests with no origin (like mobile apps or curl requests)
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true, // Allow cookies to be sent
-};
-
 // Apply CORS options to the app
 app.use(cors());
 
@@ -75,7 +51,7 @@ app.use(hpp()); // Prevent HTTP Parameter Pollution
 app.set(express.static("./Public"));
 
 app.get("/", (req, res) => {
-    res.send("Server is running");
+    res.send("Server is running on aman vercel");
 });
 
 // Routes
