@@ -27,8 +27,12 @@ const shiprocket = require("./Routes/ShipRocketRoutes");
 const app = express();
 
 // Apply CORS options to the app
-app.use(cors());
-
+app.use(cors({
+    origin: function (origin, callback) {
+      callback(null, origin); 
+    },
+    credentials: true
+  }));
 app.use(cookieParser());
 
 const limiter = rateLimit({
